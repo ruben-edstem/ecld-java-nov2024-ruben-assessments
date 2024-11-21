@@ -30,6 +30,7 @@ public class NumberAnalyzer {
         for(int i=1;i<=5;i++) {
             System.out.print("Enter number " + i + ": ");
             int num = scanner.nextInt();
+            System.out.println("Number " + num + " is: ");
             ob.analyzeNumber(num);
         }
     }
