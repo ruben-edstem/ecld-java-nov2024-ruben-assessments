@@ -1,15 +1,20 @@
-//Create a function which returns the number of true values there are in an array.
+package com.ruben.edabit.easy;
 
-import java.util.stream.IntStream;
-
-public class Challenge {
-	public static int countTrue(boolean[] arr) {
-		int count = 0;
-    for (boolean value : arr) {
-    	if (value) {
-				count++;
-      }
+public class NoOfTrue {
+    public static int countTrue(boolean[] arr) {
+        int count = 0;
+        for (boolean value : arr) {
+            if (value) {
+                count++;
+            }
+        }
+        return count;
     }
-		return count;
-	}
+    public static void main(String[] args) {
+        System.out.println(countTrue(new boolean[]{true, false, false, true, false}));  // Output: 2
+        System.out.println(countTrue(new boolean[]{false, false, false, false}));      // Output: 0
+        System.out.println(countTrue(new boolean[]{}));                                  // Output: 0
+        System.out.println(countTrue(new boolean[]{true, true, true, true}));           // Output: 4
+        System.out.println(countTrue(new boolean[]{false, true, false, true, true}));   // Output: 3
+    }
 }
