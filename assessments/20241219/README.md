@@ -1,13 +1,10 @@
-Exercise 1: E-Commerce Order Processing System
+# Exercise 1: E-Commerce Order Processing System
+ 
+## Background
 
-
-Background
-
-You are tasked with building an order processing system for a large e-commerce
-platform that handles millions of orders daily. The system needs to efficiently manage
-both recent and historical orders while supporting frequent updates and queries.
-
-Requirements
+You are tasked with building an order processing system for a large e-commerce platform that handles millions of orders daily. The system needs to efficiently manage both recent and historical orders while supporting frequent updates and queries.
+ 
+## Requirements
 
 1. Implement a dual-list system:
 	Recent orders (last 24 hours) requiring frequent updates and access
@@ -27,8 +24,8 @@ Requirements
 
 5. Handle primitive type order amounts through autoboxing
 
-
-Code Structure
+ 
+## Code Structure
 
 class Order {
 	private Long orderId;
